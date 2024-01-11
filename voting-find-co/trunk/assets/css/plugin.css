@@ -1,0 +1,22 @@
+.voting-btn {
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    background: transparent;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.vote-up i, .vote-down i {
+    color: darkgray;
+}
+
+.voting-btn:hover {
+    border: 2px solid royalblue;
+}
+
+.voting-btn:hover i {
+    color: royalblue;
+}
