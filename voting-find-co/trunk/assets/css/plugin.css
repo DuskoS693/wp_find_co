@@ -9,14 +9,41 @@
     text-transform: uppercase;
 }
 
+.voting-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.voting-action {
+    margin-left: 20px;
+}
+
+.voting-btn span {
+    color: #000;
+}
+
 .vote-up i, .vote-down i {
     color: darkgray;
 }
 
-.voting-btn:hover {
-    border: 2px solid royalblue;
+.voting-btn:hover, .active {
+    border: 2px solid DodgerBlue;
 }
 
-.voting-btn:hover i {
-    color: royalblue;
+.voting-btn:hover i, .voting-btn.active i {
+    color: DodgerBlue;
+}
+
+.voting-btn.active span, .voting-btn:hover span {
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .voting-action {
+        display: flex;
+    }
+
+    .vote-down {
+        margin-left: 15px;
+    }
 }
